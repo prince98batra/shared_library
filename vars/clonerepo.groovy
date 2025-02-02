@@ -1,6 +1,6 @@
 def call(String repoUrl) {
     script {
-        def config = loadConfig()  // Load config.yml
+        def config = loadconfig()  // Load config.yml
         def branch = config.ENVIRONMENT ?: "main"  // Default to "main" if ENVIRONMENT is null        echo "Cloning repository from branch: ${branch}"        sh '''
             if [ -d "shared_library" ]; then
                 echo ":white_tick: Repository already cloned. Pulling latest changes..."
