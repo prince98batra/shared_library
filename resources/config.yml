@@ -1,0 +1,5 @@
+SLACK_CHANNEL_NAME: "build-status"
+ENVIRONMENT: "main"
+CODE_BASE_PATH: "test"
+ACTION_MESSAGE: "Deployment Started"
+KEEP_APPROVAL_STAGE: true
